@@ -1,0 +1,114 @@
+:root {
+    --background-violet: hsl(257, 40%, 49%);
+    --button-softmagenta: hsl(300, 69%, 71%);
+}
+
+html {
+    box-sizing: border-box; 
+    font-size: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 40px; 
+    background: var(--background-violet); 
+    background-image: url(bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    overflow: auto;
+}
+
+@media screen and (min-width: 1080px) {
+    body {
+        overflow: hidden;
+        background-image: url(bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .mockups {
+        float: left;
+        width: 50%;
+    }
+    .text{
+        text-align: left;
+    }
+    .social__links {
+       display: flex;
+       justify-content: flex-end;
+       margin: 400px -55px 0px 0px;
+    }   
+}
+
+.logo img{
+    width: 125px;
+    height: auto;
+    margin-bottom:70px;
+}
+
+.mockups__img  {
+    margin: auto;
+    width: 100%;
+    max-width: 930px;
+}  
+
+.text {
+    text-align: center;
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.text h1 {
+    margin-top: 70px;
+    font-family: 'Poppins'
+}
+
+.text p {
+    font-family: 'Open Sans';
+    margin-top: 30px
+}
+
+
+.register__button {
+    border: none;
+    width: 250px;
+    padding: 1.25rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 2.25rem;
+    margin-top: 25px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: var(--background-violet);
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.register__button:hover {
+    background-color: var(--button-softmagenta);
+    color: #fff;
+}
+.social__links {
+    margin: 85px;
+    justify-content: last baseline
+}
+
+.social__links i {
+    padding: 8px;
+    margin-right: 5px;
+    border: #fff 2px solid;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.social__links i:hover {
+    color: var(--button-softmagenta);
+    border: var(--button-softmagenta) 1px solid; 
+}
+
+
